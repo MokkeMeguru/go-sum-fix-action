@@ -166,8 +166,8 @@ if git diff | grep -e '^[+\-].* // indirect$'
 then
   git restore .
   echo "Indirect dependencies are updated" >&2
-  echo "Skipping commit to avoid infinite push loop" >&2
-  exit 0
+  # echo "Skipping commit to avoid infinite push loop" >&2
+  # exit 0
 fi
 
 
